@@ -837,3 +837,12 @@ footer .social-links li:first-child { margin-left: 0; }
 .icon {
    display: block;
 }
+.projects {
+   z-index: 1;
+}
+.portfolio-item-meta {
+   color: white;
+}
+.goesbehind {
+   z-index: -1 !important;
+}

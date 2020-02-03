@@ -45,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Background />
+       <Background className="goesbehind" />
         <Header data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
@@ -53,7 +53,8 @@ class App extends Component {
         
         
         
-       <About data={this.state.resumeData.main}/>
+       <About data={this.state.resumeData.main}/> 
+       
         <Footer data={this.state.resumeData.main}/>
       </div>
     );
