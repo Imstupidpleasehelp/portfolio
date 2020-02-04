@@ -10,32 +10,32 @@ class Testimonials extends Component {
          <div className="row">
 
             <div className="two columns ">
-               <h1><span>Links</span></h1>
+               <h1><span className='textwhite'>Links</span></h1>
             </div>
 
             <div className="twelve columns flex-container links">
-                     <a href="www.google.com">
+                     <a href="https://github.com/Imstupidpleasehelp">
                       <div className="card left">
-                        <img className="card-img-top" src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fdvmjnjyyg6iz.jpg&f=1&nofb=1' alt="" />
+                        <img className="card-img-top cardimg"  src='https://i.postimg.cc/HsshD8k7/github.png' alt="" />
                         <div className="card-body">
-                          <h4 className="card-title">Title</h4>
-                          <p className="card-text">Body</p>
+                          <h4 className="card-title textwhite">My github</h4>
+                          <p className="card-text textwhite">Where I put large projects</p>
                         </div>
                       </div>
                       </a>
-                      <div className="card right">
-                        <img className="card-img-top" src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fdvmjnjyyg6iz.jpg&f=1&nofb=1' alt="" />
+                      <div className="card right"> <a href="https://codepen.io/Dylanbozarth">
+                        <img className="card-img-top cardimg" src='https://i.postimg.cc/kGwYRqf4/codepen.png' alt="" />
                         <div className="card-body">
-                          <h4 className="card-title">Title</h4>
-                          <p className="card-text">Body</p>
-                        </div>
+                          <h4 className="card-title textwhite">Codepen</h4>
+                          <p className="card-text textwhite">Where small projects are stored</p>
+                        </div></a>
                       </div>
-                      <div className="card right2">
-                        <img className="card-img-top" src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fdvmjnjyyg6iz.jpg&f=1&nofb=1' alt="" />
+                      <div className="card right2"><a href="https://www.freecodecamp.org/dylanbozarth">
+                        <img className="card-img-top cardimg" src='https://i.postimg.cc/05CBB0Ps/fcc.png' alt="" />
                         <div className="card-body">
-                          <h4 className="card-title">Title</h4>
-                          <p className="card-text">Body</p>
-                        </div>
+                          <h4 className="card-title textwhite">Free code camp</h4>
+                          <p className="card-text textwhite">Where I learned HTML, CSS, and JS</p>
+                        </div></a>
                       </div>
                   
                </div>

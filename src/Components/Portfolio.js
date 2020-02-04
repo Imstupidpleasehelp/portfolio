@@ -37,7 +37,7 @@ portfolio: []
 
       <div className="row">
 
-         <div className="twelve columns ">
+         <div className="twelve columns projects">
 
             <h1>Actions speak louder than words</h1>
 

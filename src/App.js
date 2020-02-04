@@ -7,8 +7,8 @@ import Footer from './Components/Footer';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Portfolio from './Components/Portfolio';
-import { Background } from './Components/background';
 import Testimonials from './Components/Testimonials';
+import ParticlesBg from "particles-bg";
 
 class App extends Component {
 
@@ -44,9 +44,41 @@ class App extends Component {
   }
 
   render() {
-    return (
+    let config = {
+      num: [30, 15],
+      rps: .1,
+      radius: [7, 7],
+      life: [20, 30],
+      v: [1, 3],
+      tha: [-40, 40],
+      alpha: [0.6, 0],
+      scale: [.1, 0.4],
+      position: "all",
+      color: ["#ffffff", "#ff0000"],
+      cross: "bround",
+      // emitter: "follow",
+      random: 30
+    };
+
+    if (Math.random() > .5) {
+      config = Object.assign(config, {
+        onParticleUpdate: (ctx, particle) => {
+          ctx.beginPath();
+          ctx.rect(
+            particle.p.x,
+            particle.p.y,
+            particle.radius * 5,
+            particle.radius * 2
+          );
+          ctx.fillStyle = particle.color;
+          ctx.fill();
+          ctx.closePath();
+        }
+      });
+    }
+    return ( 
       <div className="App">
-       
+     
         <Header data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
@@ -57,7 +89,10 @@ class App extends Component {
        <About data={this.state.resumeData.main}/> 
        
         <Footer data={this.state.resumeData.main}/>
+         <ParticlesBg type="custom" className="bubbles" config={config} bg={true} />
       </div>
+      
+      
     );
   }
 }

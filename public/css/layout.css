@@ -21,9 +21,17 @@
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
+body {
+   background-image: linear-gradient(to bottom, #22037b, #19107a, #101979, #071f77, #022474, #201f66, #2a1c58, #2e194b, #2e1133, #250d20, #1a0611, #000000);
+}
+ass {
 
-body { background: #0f0f0f; }
+}
 
+.bubbles {
+   position: fixed;
+   height: 1000%;
+}
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -39,13 +47,8 @@ header {
    text-align: center;
    overflow: hidden;
 }
-.topnav  {
-  
-}
-@keyframes SunFire {
-	from { box-shadow: 0 0 10px #f5c91a; }
-	to { box-shadow:  0 0 40px #f5c91a; }
-}
+
+
 /* vertically center banner section */
 header:before {
    content: '';
@@ -145,6 +148,9 @@ header .scrolldown a:hover { color: #11ABB0; }
    position: fixed;
    left: 0;
    top: 0;
+   background-image: url('');
+   background-repeat: none;
+   background-size: 70%;
 }
 .opaque { background-color: #333; }
 
@@ -185,7 +191,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: green; }
+ul#nav li.current a { color: yellow; }
 
 
 /* ------------------------------------------------------------------ */
@@ -193,7 +199,7 @@ ul#nav li.current a { color: green; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: black;
+   
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -295,7 +301,7 @@ ul#nav li.current a { color: green; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: black;
+   
    padding-top: 90px;
    padding-bottom: 60px;
 }
@@ -541,7 +547,7 @@ call-to-action .button {
 .flexslider .slides > li { position: relative; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
+.flexslider .slides > li { display: none; backface-visibility: hidden; }
 /* Suggested container for slide animation setups. Can replace this with your own */
 .flex-container { zoom: 1; position: relative; }
 
@@ -657,7 +663,6 @@ call-to-action .button {
    margin: 12px 0;
    color: #EBEEEE;
 	display: inline-block;
-	float: left;
    width: 26%;
 }
 #contact input,
@@ -760,7 +765,7 @@ footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: #095153;
+   
 }
 footer .copyright  li:first-child:before {
     display: none;
@@ -838,7 +843,12 @@ footer .social-links li:first-child { margin-left: 0; }
    display: block;
 }
 .projects {
-   z-index: 1;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+.textwhite {
+   color: white;
 }
 .portfolio-item-meta {
    color: white;
@@ -869,3 +879,11 @@ footer .social-links li:first-child { margin-left: 0; }
     float: right;
     
  }
+ .cardimg{
+    height: 25vh;
+    width: 38vw;
+ }
+.bubbles {
+   z-index: 1;
+   height: 500%;
+}
