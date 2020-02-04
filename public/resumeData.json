@@ -55,34 +55,40 @@
   "portfolio":{
     "projects": [
       {
-        "title":"A thing",
-        "category":"AAAAAAAAAAAA",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"Munch App",
+        "category":"A full food ordering app, made with react and redux",
+        "image": "munch.png",
+        "url":"https://nostalgic-morse-a25cdd.netlify.com/"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Kittenfinder App",
+        "category":"A rolodex from a public JSON that randomly generates internet cats",
+        "image":"catsho.png",
+        "url":"https://nervous-swartz-92585a.netlify.com/"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title":"Javascript calculator ",
+        "category":"",
+        "image":"calculator.png",
+        "url":"https://codepen.io/Dylanbozarth/full/vYYKVNX"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "title":"Javascript History quiz",
+        "category":"I am a former teacher, so this was more of a passion project that I could learn from.",
         "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "url":"https://codepen.io/Dylanbozarth/full/oNgLoMN"
+      },
+      {
+        "title": "My Github ",
+        "category": "",
+        "image":"fury-fighting-gear.jpg",
+        "url": "https://github.com/Imstupidpleasehelp"
+      },
+      {
+        "title": "My Codepen",
+        "category": "A website where I learned and practiced many things I know now. ",
+        "image":"fury-fighting-gear.jpg",
+        "url": "https://codepen.io/Dylanbozarth"
       }
     ]
   },

@@ -846,3 +846,26 @@ footer .social-links li:first-child { margin-left: 0; }
 .goesbehind {
    z-index: -1 !important;
 }
+.links {
+   
+   color: white;
+}
+.left {
+   width: 33%;
+ 
+ 
+   float: left;
+ }
+ 
+ .right {
+   width: 33%;
+   
+   float: left;
+  
+ }
+ .right2 {
+    width: 33%;
+   
+    float: right;
+    
+ }

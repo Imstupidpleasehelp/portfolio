@@ -21,24 +21,24 @@ class About extends Component {
       <div className="row">
          
          <div className="nine columns main-col">
-            <h2>About Me</h2>
+            <h2>Anything that I don't already work with, I am always willing to learn.</h2>
 
-            <p>{bio}</p>
+            
             <div className="row">
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-						   <span>{name}</span><br />
-						   <span>{street}<br />
-						         {city} {state}, {zip}
+						   <span>Dylan Bozarth</span><br />
+						   <span>6 East handy road<br />
+						         Colbert Washington, 99005
                    </span><br />
-						   <span>{phone}</span><br />
-                     <span>{email}</span>
+						   <span>1-509-230-2742</span><br />
+                     <span>dylanabozarth@gmail.com</span>
 					   </p>
                </div>
                <div className="columns download">
                   <p>
-                     <a href={resumeDownload} className="button" target='_blank'><i className="fa fa-download"></i>Download Resume</a>
+                     <a href={resumeDownload} className="button" target='_blank'><i className="fa fa-download"></i>View resume</a>
                   </p>
                </div>
             </div>
