@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
+import Particles from 'react-particles-js';
 import $ from 'jquery';
 import './App.css';
 import Header from './Components/Header';
@@ -19,9 +19,7 @@ class App extends Component {
       resumeData: {}
     };
 
-    ReactGA.initialize('UA-110570651-1');
-    ReactGA.pageview(window.location.pathname);
-
+  
   }
 
   getResumeData(){
@@ -46,21 +44,21 @@ class App extends Component {
   render() {
     let config = {
       num: [30, 15],
-      rps: .1,
-      radius: [7, 7],
+      rps: .4,
+      radius: [5, 7],
       life: [20, 30],
-      v: [1, 3],
+      v: [1, 2],
       tha: [-40, 40],
-      alpha: [0.6, 0],
-      scale: [.1, 0.4],
+      alpha: [5, 0],
+      scale: [.4, 0.4],
       position: "all",
-      color: ["#ffffff", "#ff0000"],
+      color: ["#ffffff"],
       cross: "bround",
       // emitter: "follow",
-      random: 30
+      random: 3
     };
 
-    if (Math.random() > .5) {
+    if (Math.random() > 15) {
       config = Object.assign(config, {
         onParticleUpdate: (ctx, particle) => {
           ctx.beginPath();
@@ -78,8 +76,8 @@ class App extends Component {
     }
     return ( 
       <div className="App">
-     
-        <Header data={this.state.resumeData.main}/>
+      <div className="bubbles"><ParticlesBg type="custom"  config={config} bg={true} /></div>
+        <Header data={this.state.resumeData.main} /> 
         <Resume data={this.state.resumeData.resume}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
         <Testimonials data={this.state.resumeData.Testimonials} />
@@ -89,7 +87,7 @@ class App extends Component {
        <About data={this.state.resumeData.main}/> 
        
         <Footer data={this.state.resumeData.main}/>
-         <ParticlesBg type="custom" className="bubbles" config={config} bg={true} />
+        
       </div>
       
       
