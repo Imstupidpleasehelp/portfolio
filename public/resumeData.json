@@ -77,6 +77,12 @@
         "category":"I am a former teacher, so this was more of a passion project that I could learn from.",
         "image":"quiz.png",
         "url":"https://codepen.io/Dylanbozarth/full/oNgLoMN"
+      },
+      {
+        "title":"Javascript To do list",
+        "category":"Basic CRUD application",
+        "image":"todo.png",
+        "url":"https://codepen.io/Dylanbozarth/full/jOPNpJe"
       }
     ]
   },
