@@ -20,7 +20,7 @@ class About extends Component {
       <section id="about">
       <div className="row">
          
-         <div className="nine columns main-col">
+         <div className="nine columns main-col about">
             <h2>Anything that I don't already work with, I am always willing to learn.</h2>
 
             
